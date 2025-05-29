@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        h1, h2 { color: #0056b3; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 10px; }
+        a { text-decoration: none; color: #007bff; font-weight: bold; }
+        a:hover { text-decoration: underline; color: #0056b3; }
+        .container { max-width: 800px; margin: 0 auto; background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ title }}</h1>
+        <p>Ласкаво просимо до нашого онлайн-магазину книг!</p>
+        <h2>Перейти до розділів:</h2>
+        <ul>
+            <li><a href="{% url 'Paper:books' %}">Наші Книги</a></li>
+            <li><a href="{% url 'Paper:promotions' %}">Акції та Знижки</a></li>
+            <li><a href="{% url 'Paper:contact' %}">Контакти</a></li>
+            <li><a href="{% url 'Paper:novelties' %}">Новинки</a></li>
+        </ul>
+    </div>
+</body>
+</html>
