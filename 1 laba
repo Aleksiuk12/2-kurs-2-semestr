@@ -14,5 +14,5 @@ class Student:
         return name_list
 
 Student = Student()
-print(SanyaKovalchuk.calculate_course())
-print(SanyaKovalchuk.create_name_list())
+print(SanyaBortnuk.calculate_course())
+print(SanyaBortnuk.create_name_list())
